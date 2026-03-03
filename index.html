@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +21,41 @@
         </div>
         <h1>Formumlário de Matrícula</h1>
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+            <div class="input-wrapper">
+              <label for="fullname">Nome completo</label>
+              <input type="text" name="fullname" id="fullname" placeholder="Qual o nome da criança?">
+            </div>
+            <div class="input-wrapper">
+              <label for="birthDate">Data de Nascimento</label>
+              <input type="date" name="birthDate" id="birthDate" placeholder="Qual a data de nascimento da criança?" lang="pt-BR">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medicalInfo">Informações Médicas</label>
+              <textarea name="medicalInfo" id="medicalInfo" cols="30" rows="10" placeholder="A criança possui alguma condição médica que a escola precise saber? (Se sim, especifique)"></textarea>
+            </div>
+
+            <div class="drop-area-wrapper">
+              <input type="file" name="birth-file" id="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="Imagem de upload">
+              <p>
+                Clique aqui para <br> 
+                selecionar os arquivos
+              </p>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
     <aside>
