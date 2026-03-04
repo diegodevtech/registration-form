@@ -13,6 +13,7 @@
 
 .checkbox-wrapper {
   position: relative;
+  cursor: pointer;
   & [type="checkbox"] {
     all: unset;
     position: absolute;
