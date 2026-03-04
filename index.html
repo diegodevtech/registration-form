@@ -98,6 +98,30 @@
             <!-- <div class="flex">
             </div> -->
           </fieldset>
+          <fieldset class="guardian">
+            <legend>Informações do Responsável</legend>
+            <div class="input-wrapper">
+              <label for="guardian">Nome do Responsável</label>
+              <input type="text" id="guardian" name="guardian">
+              <small>Principal responsável legal e contato de emergência</small>
+            </div>
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input type="text" name="phone" id="phone" placeholder="(XX) 9xxxx-xxxx" required>
+              <div class="error">
+                <img src="assets/icons/alert-circle.svg" alt="Ícone de erro">
+                <span>Insira um telefone válido</span>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" required>
+              <div class="error">
+                <img src="assets/icons/alert-circle.svg" alt="Ícone de erro">
+                <span>Insira um e-mail válido</span>
+              </div>
+            </div>
+          </fieldset>
         </form>
       </div>
     </main>
